@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather Dashboard</title>
+  <script src="https://kit.fontawesome.com/e5f8c6e259.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <div class="jumbotron">
+    <h1 class="display-4">Weather Dashboard</h1>
+    <p class="lead">This app uses the weather API to get the current weather for any city in the world!</p>
+    <hr class="my-4">
+    <p>Just search for your city and all the information about the weather will appear!</p> 
+
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon1">Search</span>
+
+      </div>
+      <input type="text" id="cityInput" class="form-control" placeholder="City Name" aria-label="Username"
+        aria-describedby="basic-addon1">
+    </div>
+
+    <button class="btn searchBtn btn-primary btn-lg" href="#" role="button"><i class="fas fa-search"></i> Search</button>
+
+  </div>
+
+  <div class="history">
+  </div>
+
+  <div class="container">
+    <div class="clickInfo row">
+
+    </div>
+
+    <div class="row">
+    <div class="forecast">
+
+    </div>
+  </div>
+
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="weather.js"></script>
+
+</body>
+
+</html>
